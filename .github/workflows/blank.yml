@@ -1,0 +1,19 @@
+
+name: workf1
+
+on: workflow_dispatch
+jobs:
+  play:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: create file
+        run: touch code.txt
+
+      - name: write to file
+        run:  echo something >> code.txt
+      
+      - name: see the content of the file 
+        run: cat code.txt
+        
